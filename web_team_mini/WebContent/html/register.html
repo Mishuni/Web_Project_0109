@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>회원가입 </title>
+<style type="text/css">
+table{
+	margin-right: auto;
+	margin-left: auto;
+	width: 500Px;
+	height: 600px;
+	background-color: gray;
+	border: 3px solid #ffffff;
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid #444444;
+    padding: 6px;
+  }
+  
+.necessary{
+	color: red;
+}
+
+</style>
+</head>
+<body>
+	<h1 align="center">회원 정보 입력</h1>
+	<hr >
+	<form action="./result.jsp" method="get" >
+
+	<br>
+	<table >
+	<tr>
+		<td align="center"><span class="necessary">*</span>아이디</td><td><input type="text" name="id" id= "id" required="required" placeholder="아이디를 입력하세요" ></td>
+	</tr>
+	<tr>
+		<td align="center"><span class="necessary">*</span>비밀번호</td><td><input type="password" name="pwd" required="required" placeholder="비밀번호를 입력하세요"></td>
+	</tr>
+	<tr>
+		<td align="center"><span class="necessary">*</span>이름</td><td><input type="text" name="name" required="required" placeholder="이름을 입력하세요" ></td>
+	</tr>
+	<tr>
+		<td align="center">전화번호</td>
+	<td>
+			<select>
+	 		<option value="opt1"> 010</option>
+	 		<option value="opt2"> 011</option>
+	 		<option value="opt3"> 017</option>
+	 	</select> - <input type="text" name="middle_num" maxlength="4" size="8"> - <input type="text" name="last_num" maxlength="4" size="8"></td>
+	</tr>
+	<tr>
+		<td align="center">성별</td>
+		<td><input type="radio" name="sex" value="F" checked="checked">여성
+		<input type="radio" name="sex" value="M">남성	</td>
+	</tr>
+	<tr>
+		<td align="center">취미</td>
+		<td><input type="checkbox" name="hobby" value="h1"> 음악감상 
+		<input type="checkbox" name="hobby" value="h2"> 독서
+		<input type="checkbox" name="hobby" value="h3"> 게임
+		<input type="checkbox" name="hobby" value="h4"> 운동	</td>
+	</tr>
+	<tr>
+		<td align="center">직업</td>
+		<td>
+			<select required="required">
+			<option value="job">관심있는 여행 테마</option>
+			<option value="job1">먹방</option>
+			<option value="job2">예술관람</option>
+			<option value="job3">문화체험</option>
+			<option value="job4">123</option>			
+			<option value="job5">456</option>			
+		</select></td>
+	</tr>
+	<tr>
+	<td align="center">자기소개</td>
+	<td><textarea rows="8" cols="50" placeholder="자기소개 작성해주세요"></textarea><br><br></td>
+	</tr>
+	<tr >	
+		<td colspan="2" align="center"><input type="submit" value="전송">
+		<input type="submit" value="취소"></td>
+	</tr>
+	</table>
+	</form>
+
+</body>
+</html>
