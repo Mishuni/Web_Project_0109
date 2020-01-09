@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="./style.css" />
+<title></title>
+</head>
+<style>
+body{
+background-color: 
+}
+h1{
+text-align: center;
+font: "휴먼둥근헤드라인";
+font
+}
+fieldset {
+	width: 80%;
+	margin-top: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul{
+padding-left: 50px;
+}
+</style>
+<body>
+	<h1>여행후기작성</h1>
+	<form action="" method="post">
+		<fieldset>
+			<legend>기본정보</legend>
+			<ul>
+				<li>닉네임<input type="text" name="nickname" placeholder="닉네임"
+					required="required" size="10" maxlength="10">
+				<li>작성날짜<input type="date" name="writeDate" size="50">
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<legend>글작성</legend>
+			<ul>
+				<li>제목<input type="text" size=40%>
+				<li>내용<br><textarea rows="20" cols=55%></textarea>
+				<li>별점 
+				<input type="radio" name="star" checked>5&nbsp;&nbsp; 
+				<input type="radio" name="star">4 &nbsp;&nbsp;
+				<input type="radio" name="star">3 &nbsp;&nbsp; 
+				<input type="radio" name="star">2 &nbsp;&nbsp; 
+				<input type="radio"	name="star">1 &nbsp;&nbsp;
+			<li>추천하시겠습니까? 
+			<select>
+					<option value="opt1">강력추천</option>
+					<option value="opt2">추천</option>
+					<option value="opt3">비추천</option>
+			</select> 
+			<li>사진을 올리고 싶으시다면..<input type="file" name="파일선택">
+			</ul>
+		</fieldset>
+		<p>
+		<center>
+		<input type="submit" value="등록하기">&nbsp;&nbsp;&nbsp; 
+		<input type="submit" value="취소하기">
+		</center>
+		</p>
+	</form>
+</body>
+</html>
