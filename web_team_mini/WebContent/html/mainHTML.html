@@ -7,15 +7,46 @@
 <title> Main </title>
 
 <script type="text/javascript">
-	var user = [[홍길동, 1234],[유미선, 1234],[이효진, 1234],[서보인, 1234],[최영신, 1234]];
+	var array_id = ['1', '서보인', '이효진', '최영신', '유미선'];
+	var array_pw = ['1', '서보인', '이효진', '최영신', '유미선'];
+	var a = 100;
 	function login(){
 		var id = prompt("id를 입력하세요");
-		var pw = prompt("패스워드를 입력하세요");
-		for(var a = 0; user.length; i++){
-			//if(user[a][0] == id)
-			alert(user[a][0]);
+		for(var i=0; i<array_id.length; i++) {
+			//alert(id);
+	    	if(array_id[i] == id){
+	    		alert(array_id[i]);
+	    		break;
+	    	}else if(array_id[i] != id){
+	    		alert('id를 확인하세요');
+	    		return;
+	    	}	
 		}
-		//alert("로그인 성공");
+	
+		var pw = prompt("패스워드를 입력하세요");
+		for(var i=0; i<array_pw.length; i++) {
+			//alert(id);
+	    	if(array_pw[i] == pw){
+	    		//alert(document.getElementById('login').value + "22222");
+	    		alert(id);
+	    		document.getElementById('login').value= "로그아웃";
+	    		break;
+	    	}else if(array_pw[i] != pw){
+	    		alert('패스워드를 확인하세요');
+	    		return;
+	    	}
+		}
+		
+		
+		
+		
+		//alert("로그인 성공"); */
+		
+		/* var array = ['포도', '사과', '바나나', '망고'];
+ 
+		for(var i=0; i<array.length; i++) {
+    	alert(array[i]);
+		} */
 	}
 
 </script>
@@ -82,7 +113,7 @@ footer {
 <header style="text-align: center;"><h1 style="color: #ffffff" >Multi Tour</h1></header>
 	<nav id="topMenu" >
 		<ul>
-			<li><a class="menuLink" href=""><input type="button" value="로그인" onclick="login()" style="border: none; background-color: #778899; color: white"></a></li>
+			<li><a class="menuLink" href=""><input type="button" id="login" value="로그인" onclick="login()" style="border: none; background-color: #778899; color: white"></a></li>
 			<li>|</li>
 			<li><a class="menuLink" href="./register.html">회원가입</a></li>
 
