@@ -7,30 +7,42 @@
 <title> Main </title>
 
 <script type="text/javascript">
+	var user = [[홍길동, 1234],[유미선, 1234],[이효진, 1234],[서보인, 1234],[최영신, 1234]];
 	function login(){
 		var id = prompt("id를 입력하세요");
 		var pw = prompt("패스워드를 입력하세요");
+		for(var a = 0; user.length; i++){
+			//if(user[a][0] == id)
+			alert(user[a][0]);
+		}
+		//alert("로그인 성공");
 	}
 
 </script>
 <style type="text/css">
-
+body{
+	background-color: #335577;
+}
 table{
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid #444444;
     border-collapse: collapse;
 }
 img.img1{
-	height: 800px;
+	height: 500px;
 	width: 600px;
 
 }
 img.img2{
-	height: 800px;
+	height: 500px;
 	width: 600px;
 
 }
 
 #topMenu {
+margin-top: 50px;
+margin-left: 750px;
  	width:960px;
 	height:auto;
 }
@@ -38,7 +50,7 @@ img.img2{
 #topMenu ul li {
 	list-style: none;
 	color: white;
-	background-color: #2d2d2d;
+	background-color: #778899;
 	line-height: 30px;
 	vertical-align: middle;
 	text-align: center;
@@ -57,7 +69,8 @@ img.img2{
 
 footer {
 	padding: 10px 0;
-	background-color:#030;
+	background-color:#778899;
+
 	color:#fff;
 	text-align:center;
 	clear: both;
@@ -66,26 +79,23 @@ footer {
 </style>
 </head>
 <body>
-<header><h1>관광지 htdml</h1></header>
+<header style="text-align: center;"><h1 style="color: #ffffff" >Multi Tour</h1></header>
 	<nav id="topMenu" >
 		<ul>
-			<li><a class="menuLink" href=""><input type="button" value="로그인" onclick="login()" style="border: none; background-color: #2d2d2d; color: white"></a></li>
+			<li><a class="menuLink" href=""><input type="button" value="로그인" onclick="login()" style="border: none; background-color: #778899; color: white"></a></li>
 			<li>|</li>
 			<li><a class="menuLink" href="./register.html">회원가입</a></li>
+
 			<li>|</li>
-			<li><a class="menuLink" href="">관광지</a></li>
-			<li>|</li>
-			<li><a class="menuLink" href="">호텔</a></li>
-			<li>|</li>
-			<li><a class="menuLink" href="">후기</a></li>
+			<li><a class="menuLink" href="hugi.html">후기</a></li>
 		</ul>
-	</nav><br>
-  <hr>
+	</nav>
+<br><br>  <hr>
  <table>
 	<tr>
-		<td id="im1"><a href="http://www.naver.com"><img class="img1"  alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg" >
+		<td id="im1"><a href="myongdongIntro2.html"><img class="img1"  alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg" >
 		</a></td>
-		<td id="im2"><a href="http://www.naver.com"><img class="img2"alt="" src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg">
+		<td id="im2"><a href="jejuIntro1.html"><img class="img2"alt="" src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg">
 		</a></td>
 	</tr>
 </table>	
