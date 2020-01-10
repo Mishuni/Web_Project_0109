@@ -4,78 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title> Main </title>
+<title>Main</title>
 
 <script type="text/javascript">
-	var array_id = ['1', '서보인', '이효진', '최영신', '유미선'];
-	var array_pw = ['1', '서보인', '이효진', '최영신', '유미선'];
+	var array_id = [ '1', '서보인', '이효진', '최영신', '유미선' ];
+	var array_pw = [ '1', '서보인', '이효진', '최영신', '유미선' ];
 	var a = 100;
-	function login(){
+	function login() {
 		var id = prompt("id를 입력하세요");
-		for(var i=0; i<array_id.length; i++) {
+		for (var i = 0; i < array_id.length; i++) {
 			//alert(id);
-	    	if(array_id[i] == id){
-	    		alert(array_id[i]);
-	    		break;
-	    	}else if(array_id[i] != id){
-	    		alert('id를 확인하세요');
-	    		return;
-	    	}	
+			if (array_id[i] == id) {
+				alert(array_id[i]);
+				break;
+			} else if (array_id[i] != id) {
+				alert('id를 확인하세요');
+				return;
+			}
 		}
-	
+
 		var pw = prompt("패스워드를 입력하세요");
-		for(var i=0; i<array_pw.length; i++) {
+		for (var i = 0; i < array_pw.length; i++) {
 			//alert(id);
-	    	if(array_pw[i] == pw){
-	    		//alert(document.getElementById('login').value + "22222");
-	    		alert(id);
-	    		document.getElementById('login').value= "로그아웃";
-	    		break;
-	    	}else if(array_pw[i] != pw){
-	    		alert('패스워드를 확인하세요');
-	    		return;
-	    	}
+			if (array_pw[i] == pw) {
+				//alert(document.getElementById('login').value + "22222");
+				alert(id);
+				document.getElementById('login').value = "로그아웃";
+				break;
+			} else if (array_pw[i] != pw) {
+				alert('패스워드를 확인하세요');
+				return;
+			}
 		}
-		
-		
-		
-		
+
 		//alert("로그인 성공"); */
-		
+
 		/* var array = ['포도', '사과', '바나나', '망고'];
- 
+		
 		for(var i=0; i<array.length; i++) {
-    	alert(array[i]);
+		alert(array[i]);
 		} */
 	}
-
 </script>
 <style type="text/css">
-body{
+body {
 	background-color: #335577;
 }
-table{
+
+table {
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid #444444;
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
-img.img1{
+
+img.img1 {
 	height: 500px;
 	width: 600px;
-
 }
-img.img2{
+
+img.img2 {
 	height: 500px;
 	width: 600px;
-
 }
 
 #topMenu {
-margin-top: 50px;
-margin-left: 750px;
- 	width:960px;
-	height:auto;
+	margin-top: 50px;
+	margin-left: 750px;
+	width: 960px;
+	height: auto;
 }
 
 #topMenu ul li {
@@ -85,35 +82,39 @@ margin-left: 750px;
 	line-height: 30px;
 	vertical-align: middle;
 	text-align: center;
-	float:left;
-	font-size:15px;
+	float: left;
+	font-size: 15px;
 }
- #topMenu .menuLink {
-                        text-decoration:none;
-                        color: white;
-                        display: block;
-                        width: 150px;
-                        font-size: 12px;
-                        font-weight: bold;
-                        font-family: "Trebuchet MS";
-                }
+
+#topMenu .menuLink {
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+}
 
 footer {
 	padding: 10px 0;
-	background-color:#778899;
-
-	color:#fff;
-	text-align:center;
+	background-color: #778899;
+	color: #fff;
+	text-align: center;
 	clear: both;
 	top: 500px;
 }
 </style>
 </head>
 <body>
-<header style="text-align: center;"><h1 style="color: #ffffff" >Multi Tour</h1></header>
-	<nav id="topMenu" >
+	<header style="text-align: center;">
+		<h1 style="color: #ffffff">Multi Tour</h1>
+	</header>
+	<nav id="topMenu">
 		<ul>
-			<li><a class="menuLink" href=""><input type="button" id="login" value="로그인" onclick="login()" style="border: none; background-color: #778899; color: white"></a></li>
+			<li><a class="menuLink" href=""><input type="button"
+					id="login" value="로그인" onclick="login()"
+					style="border: none; background-color: #778899; color: white"></a></li>
 			<li>|</li>
 			<li><a class="menuLink" href="./register.html">회원가입</a></li>
 
@@ -121,23 +122,27 @@ footer {
 			<li><a class="menuLink" href="hugi.html">후기</a></li>
 		</ul>
 	</nav>
-<br><br>  <hr>
- <table>
-	<tr>
-		<td id="im1"><a href="myongdongIntro2.html"><img class="img1"  alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg" >
-		</a></td>
-		<td id="im2"><a href="jejuIntro1.html"><img class="img2"alt="" src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg">
-		</a></td>
-	</tr>
-</table>	
-<footer>
-	 <a href="mailto:happydoyeon88@gmail.com"> 관리자 </a> <br />
-		<p> 회사 소개 : 멀티캠퍼스 서울시 역삼동 1004 </p> 
+	<br>
+	<br>
+	<hr>
+	<table>
+		<tr>
+			<td id="im1"><a href="myongdongIntro2.html"><img
+					class="img1" alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg">
+			</a></td>
+			<td id="im2"><a href="jejuIntro1.html"><img class="img2"
+					alt=""
+					src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg">
+			</a></td>
+		</tr>
+	</table>
+	<footer>
+		<a href="mailto:happydoyeon88@gmail.com"> 관리자 </a> <br />
+		<p>회사 소개 : 멀티캠퍼스 서울시 역삼동 1004</p>
 		<address>
-			<a href="mailto:multicampus@mc.edu.com">
-					<font color="#ffffff">multicampus@mc.edu.com</font>
-		    </a>
+			<a href="mailto:multicampus@mc.edu.com"> <font color="#ffffff">multicampus@mc.edu.com</font>
+			</a>
 		</address>
-</footer>
+	</footer>
 </body>
 </html>

@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>제주도 추천명소</title>
     <style type="text/css">
-    
-    td{
+     td{
+    background-color: #E6E6FA;
     border: solid;
     width: 350px;
     height: 350px;
-    font-size: 15px;
+    font-size: 20px;
+	padding-bottom: 10px;
     text-align: center;
+    font-family: "휴먼모음T"
     }
     img {
 	width: 300px;
 	height: 300px;
 	padding: 10px;
+	}
+	div{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color:#4B0082 ;
 	}
 	a{
-	text-align: center;
+	border-top:3px dashed navy; padding:3px 0;
+	text-decoration:none;
+	color: #B8860B;
 	}
+	a:hover{
+	color: #DAA520;
+	background-color: #4B0082;
+	}
+	 marquee{
+    font-family: "휴먼모음T"}
     </style>
   </head>
   <body>
 <div>
 	<center>
-	<font size="5" face="휴먼둥근헤드라인" color="#DAA520">제주도 추천명소</font></p>
+		<p><font size="10" face="휴먼둥근헤드라인"  color="#DAA520">제주도 추천명소</font></p>
 	</center>
-	<right>HOME</right>
-</div>
+	</div>
+	<p>
+	<marquee behavior="scroll"  direction="right"  scrollamount="15">★원하시는 장소를 클릭하면 구글맵으로 연결됩니다.★</marquee>
 	<table align=center>
 	<tr>
 	<td>
@@ -61,5 +79,10 @@
 	</td>
 	</tr>
 	</table>
+		<form action="mainHTML.html">
+	<center>
+	<input type="submit" id="home" value="홈으로">
+	</center>
+	</form>
   </body>
 </html>
