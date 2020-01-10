@@ -12,6 +12,8 @@
 	String pass = request.getParameter("pwd");
 	out.print(name + "님 반가워요!! 아이디는 : "+ id + " 비밀번호는 : " + pass + "입니다");
 %>
-
+<form action="../html/mainHTML.html">
+<input type="submit" value="home" onclick="">
+</form>
 </body>
 </html>
