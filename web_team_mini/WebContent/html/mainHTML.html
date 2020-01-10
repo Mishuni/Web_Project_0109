@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title> Main </title>
+
+<script type="text/javascript">
+	function login(){
+		var id = prompt("id를 입력하세요");
+		var pw = prompt("패스워드를 입력하세요");
+	}
+
+</script>
 <style type="text/css">
 
-/*  img{
-	position: static;
-
-}  */
 table{
 	border: 1px solid #444444;
     border-collapse: collapse;
@@ -25,33 +29,31 @@ img.img2{
 	width: 600px;
 
 }
-.navi{
-	background:#ffffff;
-	margin-top:-15px;
-	width:100%;
-	height:60px;
+
+#topMenu {
+ 	width:960px;
+	height:auto;
 }
 
-.navi ul{
-	list-style: none; 
-	height:40px;
-	padding-top:10px;
-	padding-bottom:5px;
-}
-.navi ul li {
-	display:inline;
+#topMenu ul li {
+	list-style: none;
+	color: white;
+	background-color: #2d2d2d;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
 	float:left;
 	font-size:15px;
 }
-
-.navi a, .navi a:visited {
-	padding: 10px 5px 5px 35px;
-	display: block;
-	color:#000;
-	width: 150px; 
-	text-decoration: none;
-
-}
+ #topMenu .menuLink {
+                        text-decoration:none;
+                        color: white;
+                        display: block;
+                        width: 150px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-family: "Trebuchet MS";
+                }
 
 footer {
 	padding: 10px 0;
@@ -64,22 +66,28 @@ footer {
 </style>
 </head>
 <body>
-
-
-<nav class="navi" >    
-	<ul >
-		<li><a href="register.html">회원가입</a></li>
-		<li><a href="#" >로그인 </a></li>
-		<li><a href="#" >메뉴3 </a></li>
-		<li><a href="#" >메뉴4 </a></li>
-		<li><a href="hugi.html" >후기작성 </a></li>
-	</ul><hr>
- </nav>
- 
- <hr>
+<header><h1>관광지 htdml</h1></header>
+	<nav id="topMenu" >
+		<ul>
+			<li><a class="menuLink" href=""><input type="button" value="로그인" onclick="login()" style="border: none; background-color: #2d2d2d; color: white"></a></li>
+			<li>|</li>
+			<li><a class="menuLink" href="./register.html">회원가입</a></li>
+			<li>|</li>
+			<li><a class="menuLink" href="">관광지</a></li>
+			<li>|</li>
+			<li><a class="menuLink" href="">호텔</a></li>
+			<li>|</li>
+			<li><a class="menuLink" href="">후기</a></li>
+		</ul>
+	</nav><br>
+  <hr>
  <table>
-	<tr><td id="im1"><a href="http://www.naver.com"><img class="img1"  alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg" ></a></td>
-	<td id="im2"><a href="http://www.naver.com"><img class="img2"alt="" src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg"></a></td></tr>
+	<tr>
+		<td id="im1"><a href="http://www.naver.com"><img class="img1"  alt="" src="http://bbkk.kr/d/t/6/633_DSC_6885.jpg" >
+		</a></td>
+		<td id="im2"><a href="http://www.naver.com"><img class="img2"alt="" src="https://t1.daumcdn.net/liveboard/dailylife/49f50508349147aa9fb5ebfca08733dc.jpg">
+		</a></td>
+	</tr>
 </table>	
 <footer>
 	 <a href="mailto:happydoyeon88@gmail.com"> 관리자 </a> <br />
